@@ -11,6 +11,7 @@ public class Shooting : MonoBehaviour
     public bool canFire = true;
     public float timer;
     public float timeBetweenFiring;
+    public GameObject myPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,26 @@ public class Shooting : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, rotz);
 
+
+        //rotate sprite 
+        if (rotz< -90 || rotz > 90)
+        {
+            if (myPlayer.transform.eulerAngles.y == 0)
+            {
+
+                transform.localRotation = Quaternion.Euler(180, 0, -rotz);
+
+            }else if (myPlayer.transform.eulerAngles.y == 180)
+            {
+
+                transform.localRotation = Quaternion.Euler(180, 180, -rotz);
+
+            }
+
+        }
+
+
+        //fire rate
         if (!canFire) {
 
             timer += Time.deltaTime;
@@ -42,10 +63,14 @@ public class Shooting : MonoBehaviour
 
         }
 
+
+        //fire
         if (Input.GetMouseButton(0) && canFire)
         {
             canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
         }
+
+
     }
 }

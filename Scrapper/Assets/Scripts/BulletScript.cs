@@ -8,6 +8,7 @@ public class BulletScript : MonoBehaviour
     private Camera mainCamera;
     private Rigidbody2D rb;
     public float force;
+    public float bulletDamage;
 
 
     // Start is called before the first frame update
@@ -31,6 +32,12 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        if(collision.gameObject.TryGetComponent<Health>(out Health enemyComponent)) // <Health> reprezinta scriptul
+        {
+            enemyComponent.TakeDamage(bulletDamage);
+        }
+
         Destroy(gameObject);
 
     }
