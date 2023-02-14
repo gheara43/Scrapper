@@ -24,18 +24,16 @@ public class BulletScript : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, rot + 90);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
         if(collision.gameObject.TryGetComponent<Health>(out Health enemyComponent)) // <Health> reprezinta scriptul
         {
-            enemyComponent.TakeDamage(bulletDamage);
+            if (collision.gameObject.CompareTag("Enemy")) // daca are tagul Enemy primeste damage
+            {
+                enemyComponent.TakeDamage(bulletDamage);
+            }
+            
         }
 
         Destroy(gameObject);
