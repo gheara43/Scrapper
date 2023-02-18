@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
+            GetComponent<LootBag>().InstantiateLoot(transform.position);
             Destroy(gameObject);
         }
     }

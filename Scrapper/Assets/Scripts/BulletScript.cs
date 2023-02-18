@@ -27,7 +27,7 @@ public class BulletScript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if(collision.gameObject.TryGetComponent<Health>(out Health enemyComponent)) // <Health> reprezinta scriptul
+        if(collision.gameObject.TryGetComponent<Enemy>(out Enemy enemyComponent)) // <Health> reprezinta scriptul
         {
             if (collision.gameObject.CompareTag("Enemy")) // daca are tagul Enemy primeste damage
             {
