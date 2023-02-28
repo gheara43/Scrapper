@@ -36,7 +36,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5142214209752504196, guid: 2ba33a6a1ee59bc4981469b61cafb32c, type: 3}
       propertyPath: m_Text
-      value: 'Generated in 0.87s
+      value: 'Generated in 1.04s
 
         Stage: 1, Level graph: LevelGraph
 
