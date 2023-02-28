@@ -43394,7 +43394,7 @@ MonoBehaviour:
   RandomGeneratorSeed: 0
   GenerateOnStart: 1
   ThrowExceptionsImmediately: 0
-  DisableCustomPostProcessing: 1
+  DisableCustomPostProcessing: 0
 --- !u!4 &1301606735
 Transform:
   m_ObjectHideFlags: 0
