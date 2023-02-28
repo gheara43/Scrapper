@@ -1,0 +1,245 @@
+{
+  "roomDescriptionsList": [
+    {
+      "Key": {
+        "Id": 0,
+        "Name": "Entrance"
+      },
+      "Value": {
+        "IsCorridor": false,
+        "RoomTemplates": [
+          {
+            "Name": "Room template 24",
+            "Outline": {
+              "points": [
+                {
+                  "X": -5,
+                  "Y": -1
+                },
+                {
+                  "X": -4,
+                  "Y": -1
+                },
+                {
+                  "X": -4,
+                  "Y": 4
+                },
+                {
+                  "X": 1,
+                  "Y": 4
+                },
+                {
+                  "X": 1,
+                  "Y": 0
+                },
+                {
+                  "X": 2,
+                  "Y": 0
+                },
+                {
+                  "X": 2,
+                  "Y": -4
+                },
+                {
+                  "X": -4,
+                  "Y": -4
+                },
+                {
+                  "X": -4,
+                  "Y": -3
+                },
+                {
+                  "X": -5,
+                  "Y": -3
+                }
+              ]
+            },
+            "Doors": {
+              "$type": "Edgar.GraphBasedGenerator.Grid2D.ManualDoorModeGrid2D, EdgarSingleFile",
+              "Doors": [
+                {
+                  "From": {
+                    "X": -5,
+                    "Y": -1
+                  },
+                  "To": {
+                    "X": -5,
+                    "Y": -3
+                  },
+                  "Socket": null,
+                  "Type": 0
+                }
+              ],
+              "DoorLines": null
+            },
+            "RepeatMode": 0,
+            "AllowedTransformations": [
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Key": {
+        "Id": 1,
+        "Name": "Normal"
+      },
+      "Value": {
+        "IsCorridor": false,
+        "RoomTemplates": [
+          {
+            "$id": "22",
+            "Name": "Room template 5",
+            "Outline": {
+              "points": [
+                {
+                  "X": -5,
+                  "Y": 2
+                },
+                {
+                  "X": -4,
+                  "Y": 2
+                },
+                {
+                  "X": -4,
+                  "Y": 4
+                },
+                {
+                  "X": 1,
+                  "Y": 4
+                },
+                {
+                  "X": 1,
+                  "Y": 2
+                },
+                {
+                  "X": 2,
+                  "Y": 2
+                },
+                {
+                  "X": 2,
+                  "Y": -4
+                },
+                {
+                  "X": -5,
+                  "Y": -4
+                }
+              ]
+            },
+            "Doors": {
+              "$type": "Edgar.GraphBasedGenerator.Grid2D.ManualDoorModeGrid2D, EdgarSingleFile",
+              "Doors": null,
+              "DoorLines": [
+                {
+                  "Line": {
+                    "From": {
+                      "X": 2,
+                      "Y": -1
+                    },
+                    "To": {
+                      "X": 2,
+                      "Y": -1
+                    },
+                    "degeneratedDirection": 3,
+                    "Length": 0
+                  },
+                  "Length": 2,
+                  "DoorSocket": null,
+                  "Type": 0
+                },
+                {
+                  "Line": {
+                    "From": {
+                      "X": -5,
+                      "Y": -1
+                    },
+                    "To": {
+                      "X": -5,
+                      "Y": -1
+                    },
+                    "degeneratedDirection": 3,
+                    "Length": 0
+                  },
+                  "Length": 2,
+                  "DoorSocket": null,
+                  "Type": 0
+                }
+              ]
+            },
+            "RepeatMode": 0,
+            "AllowedTransformations": [
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Key": {
+        "Id": 2,
+        "Name": "Normal"
+      },
+      "Value": {
+        "IsCorridor": false,
+        "RoomTemplates": [
+          {
+            "$ref": "22"
+          }
+        ]
+      }
+    },
+    {
+      "Key": {
+        "Id": 3,
+        "Name": "Normal"
+      },
+      "Value": {
+        "IsCorridor": false,
+        "RoomTemplates": [
+          {
+            "$ref": "22"
+          }
+        ]
+      }
+    }
+  ],
+  "passages": [
+    {
+      "Room1": {
+        "Id": 0,
+        "Name": "Entrance"
+      },
+      "Room2": {
+        "Id": 1,
+        "Name": "Normal"
+      }
+    },
+    {
+      "Room1": {
+        "Id": 1,
+        "Name": "Normal"
+      },
+      "Room2": {
+        "Id": 2,
+        "Name": "Normal"
+      }
+    },
+    {
+      "Room1": {
+        "Id": 2,
+        "Name": "Normal"
+      },
+      "Room2": {
+        "Id": 3,
+        "Name": "Normal"
+      }
+    }
+  ],
+  "MinimumRoomDistance": 0,
+  "Clusters": null,
+  "Constraints": null,
+  "RoomTemplateRepeatModeDefault": 2,
+  "RoomTemplateRepeatModeOverride": null,
+  "Name": "Test"
+}

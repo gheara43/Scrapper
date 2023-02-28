@@ -14,20 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelGraph: {fileID: 11400000, guid: 8e16ac01b7ee24339adf37d577dbc1b3, type: 2}
   UseRandomLevelGraph: 0
-  Stage: 1
+  Stage: 2
   Stage1LevelGraphs: []
   Stage2LevelGraphs: []
   RoomTemplates:
     BasicRoomTemplates:
-    - {fileID: 8272979083870147818, guid: a3c43661023fa41db8fa9f92c31a4f94, type: 3}
-    - {fileID: 7389079901084437529, guid: 870e5ff12056c42568cf7c603888dfaf, type: 3}
+    - {fileID: 3261526123507647335, guid: adce7f9808d5c2d4bb175cfe468f0e39, type: 3}
+    - {fileID: 3261526123507647335, guid: 98e113e545386194fb79d1aa06b5e724, type: 3}
+    - {fileID: 3261526123507647335, guid: 53e213158fea0fc4187a36867880498f, type: 3}
     BossFoyersRoomTemplates: []
     BossRoomTemplates: []
     CorridorRoomTemplates:
-    - {fileID: 5805041104597474318, guid: 519d28db9cfca499eb924b7832f59fb2, type: 3}
-    - {fileID: 7705537274225492051, guid: 61bbd50f048124b0e887e685f9cc4161, type: 3}
+    - {fileID: 7717008928725851638, guid: ff15e7617a9232447a5e535faebaa039, type: 3}
+    - {fileID: 3262677170972181801, guid: 7737cb8c83cd120469e5e1e4b541306c, type: 3}
     EntranceRoomTemplates:
-    - {fileID: 5838216278985961278, guid: ecedae4621ca14bb2ba1c750e74dd3e1, type: 3}
+    - {fileID: 3261526123507647335, guid: bc72f4fdfd512b44fb668ef2ee7e3f96, type: 3}
     ExitRoomTemplates: []
     HubRoomTemplates: []
     RewardRoomTemplates: []

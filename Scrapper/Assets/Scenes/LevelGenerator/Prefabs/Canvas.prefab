@@ -36,12 +36,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5142214209752504196, guid: 2ba33a6a1ee59bc4981469b61cafb32c, type: 3}
       propertyPath: m_Text
-      value: 'Generated in 0.82s
+      value: 'Generated in 0.87s
 
         Stage: 1, Level graph: LevelGraph
 
         Room
-        type: Normal, Room template: Room template 2'
+        type: , Room template: '
       objectReference: {fileID: 0}
     - target: {fileID: 7633995800546438398, guid: 2ba33a6a1ee59bc4981469b61cafb32c, type: 3}
       propertyPath: m_Pivot.x
